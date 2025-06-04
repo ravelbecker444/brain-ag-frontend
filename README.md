@@ -1,46 +1,78 @@
-# Getting Started with Create React App
+# Brain Agriculture - Sistema de Gerenciamento de Produtores Rurais
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Comentários
+Só gostaria de primeiramente agradecer a oportunidade, honestamente
+já havia um tempo que não precisava fazer algo novo e do 0 dessa maneira
+e gostei muito de relembrar a experiência!
 
-## Available Scripts
+Ferramentas de AI utilizadas: Deepseek e GitHub Copilot
 
-In the project directory, you can run:
+## 📌 Visão Geral
 
-### `npm start`
+Solução completa para cadastro e análise de dados de produtores rurais, proporcionando:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Gestão centralizada de informações agrícolas
+- Dashboard interativo com métricas estratégicas
+- Validação automática de documentos e áreas
+- Relatórios personalizados por safra e cultura
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## ✨ Funcionalidades Principais
 
-### `npm test`
+### 👨‍🌾 Cadastro de Produtores
+- Validação automática de CPF/CNPJ
+- Cadastro de múltiplas propriedades por produtor
+- Gestão de culturas por safra agrícola
+- Controle de áreas (total, agricultável e vegetação)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 📊 Dashboard Analítico
+- **Resumo Geral**:
+  - Total de fazendas cadastradas
+  - Área total em hectares
+- **Gráficos Interativos**:
+  - Distribuição geográfica por estado
+  - Proporção de culturas plantadas
+  - Uso do solo (agricultável vs vegetação)
 
-### `npm run build`
+### 🔧 Ferramentas Técnicas
+- API RESTful documentada
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🛠️ Tecnologias Utilizadas
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Backend
+| Tecnologia       | Descrição                          |
+|------------------|------------------------------------|
+| NodeJS           | Linguagem principal                |
+| NestJS           | Framework                          |
+| PostgreSQL       | Banco de dados relacional          |
+| Docker           | Contêinerização da aplicação       |
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Frontend (opcional)
+| Tecnologia       | Descrição                          |
+|------------------|------------------------------------|
+| React.js         | Biblioteca frontend                |
+| TypeScript       | Tipagem estática                   |
+| Chart.js         | Visualização de dados              |
 
-### `npm run eject`
+## 🚀 Como Executar o Projeto
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Pré-requisitos
+- Docker 20.10+
+- Docker Compose 1.29+
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Instalação via Docker (recomendado)
+```bash
+# 1. Clone o repositório
+git clone https://github.com/seu-usuario/brain-agriculture.git
+cd brain-agriculture
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+# 2. Inicie os containers
+docker-compose up -d
 
-## Learn More
+# 3. Acesse os serviços:
+# API: http://localhost:3000
+# Frontend: http://localhost:3001
+# Docs: http://localhost:3000/api
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+
