@@ -51,7 +51,6 @@ Solução completa para cadastro e análise de dados de produtores rurais, propo
 |------------------|------------------------------------|
 | React.js         | Biblioteca frontend                |
 | TypeScript       | Tipagem estática                   |
-| Chart.js         | Visualização de dados              |
 
 ## 🚀 Como Executar o Projeto
 
