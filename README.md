@@ -73,5 +73,9 @@ docker-compose up -d
 # Frontend: http://localhost:3001
 # Docs: http://localhost:3000/api
 
+# 4. Rode os comandos:
+# API: npm run start:dev
+# Frontend: npm run start
+
 
 
